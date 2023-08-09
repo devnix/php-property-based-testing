@@ -1,0 +1,22 @@
+{
+    "name": "idealista/property-based-testing-workshop",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Idealista\\PropertyBasedTestingWorkshop\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pablo Largo Mohedano",
+            "email": "devnix.code@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    }
+}
