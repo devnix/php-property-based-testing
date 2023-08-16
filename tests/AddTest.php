@@ -23,14 +23,17 @@ final class AddTest extends TestCase
             (int) (PHP_INT_MAX / 2) - 1
         );
 
-        $this->forAll(
-            $nonOverflowIntRange,
-            $nonOverflowIntRange,
-        )->then(function (int $a, int $b) {
-            self::assertSame(
-                add($a, $b),
-                add($b, $a),
-            );
-        });
+        $this
+            ->forAll(
+                $nonOverflowIntRange,
+                $nonOverflowIntRange,
+            )
+            ->then(function (int $a, int $b) {
+                self::assertSame(
+                    add($a, $b),
+                    add($b, $a),
+                );
+            })
+        ;
     }
 }

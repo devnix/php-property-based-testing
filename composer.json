@@ -4,7 +4,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Idealista\\PropertyBasedTestingWorkshop\\": "src/"
+            "Idealista\\PropertyBasedTestingWorkshop\\": "src/",
+            "Idealista\\PropertyBasedTestingWorkshop\\Tests\\": "tests/"
         },
         "files": [
             "src/functions.php"

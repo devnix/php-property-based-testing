@@ -9,6 +9,10 @@
          beStrictAboutOutputDuringTests="true"
          failOnRisky="true"
          failOnWarning="true">
+    <extensions>
+        <bootstrap class="Innmind\BlackBox\PHPUnit\Extension"/>
+    </extensions>
+
     <testsuites>
         <testsuite name="default">
             <directory>../../tests</directory>
