@@ -12,8 +12,13 @@ coding-standard-check:                                                          
 
 static-analysis:                                                                ## run static analysis checks
 	./vendor/bin/phpstan analyse -c etc/config/phpstan.dist.neon
-	./vendor/bin/psalm -c etc/config/psalm.xml --show-info=true --no-cache --threads=1
-	./vendor/bin/psalm -c etc/config/psalm.xml --no-cache --threads=1
+	./vendor/bin/psalm -c etc/config/psalm.xml --show-info=true
+
+type-coverage:                                                                  ## send static analysis type coverage metrics to https://shepherd.dev/
+	./vendor/bin/psalm -c etc/config/psalm.xml --shepherd --stats
+
+security-analysis:                                                              ## run static analysis security checks
+	./vendor/bin/psalm -c etc/config/psalm.xml --taint-analysis
 
 unit-tests:                                                                     ## run unit test suite
 	./vendor/bin/phpunit -c etc/config/phpunit.xml
