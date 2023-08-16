@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Idealista\PropertyBasedTestingWorkshop;
 
-function add(int $a, int $b): int
+function add(int $a, int $b): string
 {
-    return $a + $b;
+    return bcadd((string) $a, (string) $b);
 }

@@ -16,17 +16,13 @@ final class AddTest extends TestCase
 {
     use BlackBox;
 
-    public function testAddIsCommutative(): void
+    public function testIsCommutative(): void
     {
-        $nonOverflowIntRange = Set\Integers::between(
-            (int) (PHP_INT_MIN / 2) + 1, // @phpstan-ignore-line
-            (int) (PHP_INT_MAX / 2) - 1
-        );
 
         $this
             ->forAll(
-                $nonOverflowIntRange,
-                $nonOverflowIntRange,
+                Set\Integers::any(),
+                Set\Integers::any(),
             )
             ->then(function (int $a, int $b) {
                 self::assertSame(
