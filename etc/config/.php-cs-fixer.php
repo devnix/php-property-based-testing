@@ -2,11 +2,12 @@
 
 $finder = PhpCsFixer\Finder::create()
     ->in([
-        __DIR__ . '/../../src',
-        __DIR__ . '/../../tests'
+        __DIR__.'/../../src',
+        __DIR__.'/../../tests',
     ]);
 
 return (new PhpCsFixer\Config())
+    ->setRiskyAllowed(true)
     ->setRules([
         '@Symfony' => true,
         '@PSR2' => true,
@@ -18,5 +19,7 @@ return (new PhpCsFixer\Config())
                 'var',
             ],
         ],
+        'static_lambda' => true,
     ])
-    ->setFinder($finder);
+    ->setFinder($finder)
+;

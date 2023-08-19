@@ -1109,16 +1109,16 @@
         },
         {
             "name": "innmind/black-box",
-            "version": "5.1.2",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Innmind/BlackBox.git",
-                "reference": "8e4bc94d4dbe96ad2a6c29c08e3c9bf5e667f6aa"
+                "reference": "640334ad870c2f5f3ec6cb9e5daf0f98f92c1e40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Innmind/BlackBox/zipball/8e4bc94d4dbe96ad2a6c29c08e3c9bf5e667f6aa",
-                "reference": "8e4bc94d4dbe96ad2a6c29c08e3c9bf5e667f6aa",
+                "url": "https://api.github.com/repos/Innmind/BlackBox/zipball/640334ad870c2f5f3ec6cb9e5daf0f98f92c1e40",
+                "reference": "640334ad870c2f5f3ec6cb9e5daf0f98f92c1e40",
                 "shasum": ""
             },
             "require": {
@@ -1136,6 +1136,9 @@
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/Runner/functions.php"
+                ],
                 "psr-4": {
                     "Innmind\\BlackBox\\": "src/"
                 }
@@ -1159,9 +1162,9 @@
             ],
             "support": {
                 "issues": "http://github.com/Innmind/BlackBox/issues",
-                "source": "https://github.com/Innmind/BlackBox/tree/5.1.2"
+                "source": "https://github.com/Innmind/BlackBox/tree/5.2.0"
             },
-            "time": "2023-07-30T15:35:49+00:00"
+            "time": "2023-08-19T09:46:37+00:00"
         },
         {
             "name": "innmind/json",
