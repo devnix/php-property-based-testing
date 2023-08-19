@@ -2,4 +2,4 @@
 
 declare(strict_types=1);
 
-require 'add.php';
+require __DIR__.'/add.php';
