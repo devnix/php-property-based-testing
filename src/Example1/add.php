@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Idealista\PropertyBasedTestingWorkshop;
+namespace Idealista\PropertyBasedTestingWorkshop\Example1;
 
 use Psl\Type;
 
